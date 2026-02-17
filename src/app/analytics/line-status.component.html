@@ -1,0 +1,20 @@
+
+
+
+<div class="lines">
+
+  <div class="line-card"
+       *ngFor="let line of store.lines$ | async"
+       [class.selected]="line.line === store.selectedLine"
+       (click)="select(line.line)">
+
+    <div class="dot" [class]="line.state"></div>
+
+    <div>
+      <div class="name">{{ line.line }}</div>
+      <div class="desc">{{ line.description }}</div>
+    </div>
+
+  </div>
+
+</div>

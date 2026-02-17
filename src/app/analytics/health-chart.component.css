@@ -1,0 +1,45 @@
+.viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 420px;
+  touch-action: pan-y;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+}
+
+.slider.animate {
+  transition: transform 0.35s ease;
+}
+
+.chart {
+  width: 100%;
+  height: 420px;
+}
+
+
+.chart-wrapper {
+  position: relative;
+}
+
+.chart {
+  height: 420px;
+  width: 100%;
+  transition: opacity 0.25s ease;
+}
+
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 500;
+}

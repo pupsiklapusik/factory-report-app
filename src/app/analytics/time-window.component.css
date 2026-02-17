@@ -1,0 +1,18 @@
+.periods {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+button.active {
+  background: #007aff;
+  color: white;
+}

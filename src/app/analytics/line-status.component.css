@@ -1,0 +1,44 @@
+.lines {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.line-card {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+.line-card.selected {
+  background: #e0f0ff;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.ONLINE { background: #28c840; }
+.dot.OFFLINE { background: #ff3b30; }
+.dot.GREY { background: #aaa; }
+
+.name {
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.updating {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 6px;
+}

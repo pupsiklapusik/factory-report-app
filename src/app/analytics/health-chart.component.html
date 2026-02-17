@@ -1,0 +1,18 @@
+<div class="toolbar">
+  <button (click)="prev()">←</button>
+  <button (click)="next()">→</button>
+</div>
+
+<div class="chart-wrapper">
+
+  <div echarts
+       [options]="option"
+       class="chart">
+  </div>
+
+  <div class="loading-overlay" *ngIf="loading">
+    Updating...
+  </div>
+
+</div>
+

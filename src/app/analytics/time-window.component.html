@@ -1,0 +1,9 @@
+<div class="periods">
+
+  <button *ngFor="let p of periods"
+          (click)="select(p)"
+          [class.active]="chart.period === p">
+    {{ p }}
+  </button>
+
+</div>

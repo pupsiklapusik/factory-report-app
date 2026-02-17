@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { HealthChartComponent } from './analytics/health-chart.component';
+import { LineStatusComponent } from './analytics/line-status.component';
+import { TimeWindowComponent } from './analytics/time-window.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [
+    HealthChartComponent,
+    LineStatusComponent,
+    TimeWindowComponent
+  ],
+  template: `
+    <app-line-status></app-line-status>
+    <app-time-window></app-time-window>
+    <app-health-chart></app-health-chart>
+  `
 })
-export class App {
-  protected readonly title = signal('spool-ui');
-}
+export class App {}
